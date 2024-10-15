@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARES_Preval", "ARES_Preval\ARES_Preval.csproj", "{0D8891B1-07DB-4C03-9668-69DDCB53CBA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D8891B1-07DB-4C03-9668-69DDCB53CBA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D8891B1-07DB-4C03-9668-69DDCB53CBA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D8891B1-07DB-4C03-9668-69DDCB53CBA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D8891B1-07DB-4C03-9668-69DDCB53CBA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0BEAA343-0EF8-4B73-BF36-DCDAED42D989}
+	EndGlobalSection
+EndGlobal

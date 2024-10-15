@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D8891B1-07DB-4C03-9668-69DDCB53CBA9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ARES_Preval</RootNamespace>
+    <AssemblyName>ARES_Preval</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FxCoreMgd_24.7_17, Version=25.0.0.0, Culture=neutral, PublicKeyToken=a59eb2049e93a3cd, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\FxCoreMgd_24.7_17.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TD_Mgd_24.7_17, Version=24.7.0.0, Culture=neutral, PublicKeyToken=460a0bef3ba73253, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\TD_Mgd_24.7_17.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ANBnPropWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ANBnPropWork.Designer.cs">
+      <DependentUpon>ANBnPropWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ANPassage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ANPassage.Designer.cs">
+      <DependentUpon>ANPassage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ANRamp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ANRamp.Designer.cs">
+      <DependentUpon>ANRamp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ARES_PrevalApp.cs" />
+    <Compile Include="ARES_PrevalCommands.cs" />
+    <Compile Include="Createdlayerlists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Createdlayerlists.Designer.cs">
+      <DependentUpon>Createdlayerlists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoorSizeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoorSizeFrm.Designer.cs">
+      <DependentUpon>DoorSizeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnteranceGateFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnteranceGateFrm.Designer.cs">
+      <DependentUpon>EnteranceGateFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExitGateFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitGateFrm.Designer.cs">
+      <DependentUpon>ExitGateFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FireDoorFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FireDoorFrm.Designer.cs">
+      <DependentUpon>FireDoorFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FireGateFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FireGateFrm.Designer.cs">
+      <DependentUpon>FireGateFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirePipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirePipe.Designer.cs">
+      <DependentUpon>FirePipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloorNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloorNameForm.Designer.cs">
+      <DependentUpon>FloorNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LayerRenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayerRenameForm.Designer.cs">
+      <DependentUpon>LayerRenameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LayersShowHideForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayersShowHideForm.Designer.cs">
+      <DependentUpon>LayersShowHideForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LineConversion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LineConversion.Designer.cs">
+      <DependentUpon>LineConversion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarginForm.Designer.cs">
+      <DependentUpon>MarginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NBCrelate.cs" />
+    <Compile Include="PlineCloseFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlineCloseFrm.Designer.cs">
+      <DependentUpon>PlineCloseFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="projectinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="projectinForm.Designer.cs">
+      <DependentUpon>projectinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projtittle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projtittle.Designer.cs">
+      <DependentUpon>Projtittle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjTypeForm.Designer.cs">
+      <DependentUpon>ProjTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RoadAName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoadAName.Designer.cs">
+      <DependentUpon>RoadAName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomNameForm.Designer.cs">
+      <DependentUpon>RoomNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RuleCheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RuleCheckForm.Designer.cs">
+      <DependentUpon>RuleCheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rulecheckprogress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rulecheckprogress.Designer.cs">
+      <DependentUpon>Rulecheckprogress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rules.cs" />
+    <Compile Include="SecLineFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecLineFrm.Designer.cs">
+      <DependentUpon>SecLineFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SumpFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SumpFrm.Designer.cs">
+      <DependentUpon>SumpFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TankFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TankFrm.Designer.cs">
+      <DependentUpon>TankFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TwoPolyTouch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TwoPolyTouch.Designer.cs">
+      <DependentUpon>TwoPolyTouch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WDRFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WDRFrm.Designer.cs">
+      <DependentUpon>WDRFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowSizeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowSizeFrm.Designer.cs">
+      <DependentUpon>WindowSizeFrm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ANBnPropWork.resx">
+      <DependentUpon>ANBnPropWork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ANPassage.resx">
+      <DependentUpon>ANPassage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ANRamp.resx">
+      <DependentUpon>ANRamp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Createdlayerlists.resx">
+      <DependentUpon>Createdlayerlists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoorSizeFrm.resx">
+      <DependentUpon>DoorSizeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnteranceGateFrm.resx">
+      <DependentUpon>EnteranceGateFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitGateFrm.resx">
+      <DependentUpon>ExitGateFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FireDoorFrm.resx">
+      <DependentUpon>FireDoorFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FireGateFrm.resx">
+      <DependentUpon>FireGateFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirePipe.resx">
+      <DependentUpon>FirePipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloorNameForm.resx">
+      <DependentUpon>FloorNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayerRenameForm.resx">
+      <DependentUpon>LayerRenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayersShowHideForm.resx">
+      <DependentUpon>LayersShowHideForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LineConversion.resx">
+      <DependentUpon>LineConversion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarginForm.resx">
+      <DependentUpon>MarginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlineCloseFrm.resx">
+      <DependentUpon>PlineCloseFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="projectinForm.resx">
+      <DependentUpon>projectinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projtittle.resx">
+      <DependentUpon>Projtittle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjTypeForm.resx">
+      <DependentUpon>ProjTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoadAName.resx">
+      <DependentUpon>RoadAName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomNameForm.resx">
+      <DependentUpon>RoomNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RuleCheckForm.resx">
+      <DependentUpon>RuleCheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rulecheckprogress.resx">
+      <DependentUpon>Rulecheckprogress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecLineFrm.resx">
+      <DependentUpon>SecLineFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SumpFrm.resx">
+      <DependentUpon>SumpFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TankFrm.resx">
+      <DependentUpon>TankFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TwoPolyTouch.resx">
+      <DependentUpon>TwoPolyTouch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WDRFrm.resx">
+      <DependentUpon>WDRFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowSizeFrm.resx">
+      <DependentUpon>WindowSizeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TextFile1.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy D:\Workstation\Prasad\ARES\ARES_Preval\ARES_Preval\bin\Debug\ARES_Preval.dll D:\ARES_Preval.dll
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>
