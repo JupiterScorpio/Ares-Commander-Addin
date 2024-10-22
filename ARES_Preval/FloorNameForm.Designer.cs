@@ -691,10 +691,10 @@
             "One Hundred Eleventh",
             "One Hundred Twelth",
             "One Hundred Thirteenth",
-            "One Hundred Fourghteenth",
-            "One Hundred Fifghteenth",
+            "One Hundred Fourteenth",
+            "One Hundred Fifhteenth",
             "One Hundred Sixteenth",
-            "One Hundred Seventeeth",
+            "One Hundred Seventeenth",
             "One Hundred Eighteenth",
             "One Hundred Ninteenth",
             "One Hundred Twentieth"});
